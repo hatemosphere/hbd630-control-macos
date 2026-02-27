@@ -1,0 +1,30 @@
+name: HDB630Control
+options:
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "16.0"
+  bundleIdPrefix: com.hdb630
+
+targets:
+  HDB630Control:
+    type: application
+    platform: macOS
+    sources:
+      - path: App
+      - path: Bluetooth
+      - path: UI
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.hdb630.control
+        PRODUCT_NAME: HDB630Control
+        SWIFT_OBJC_BRIDGING_HEADER: HDB630Control-Bridging-Header.h
+        INFOPLIST_FILE: Info.plist
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        LS_UI_ELEMENT: YES
+        SWIFT_VERSION: "5.9"
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGN_ENTITLEMENTS: ""
+        ENABLE_HARDENED_RUNTIME: NO
+    dependencies:
+      - sdk: IOBluetooth.framework

@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C89EB2F9F389E69E5F7EA4D /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C800B4A314F01AFF9A603E3F /* StatusBarView.swift */; };
+		802E20CB841C6B52FF041864 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170740EEF5E035DBF9E758D /* BluetoothManager.swift */; };
+		9095069AAAF75001F34F8BD5 /* HeadphoneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43BB7830237A2173F8A61D6 /* HeadphoneController.swift */; };
+		931E75494D8D2E30C472DB09 /* GAIAProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8EDA22DD857CE2E780097B /* GAIAProtocol.swift */; };
+		C94E0F86BD91C15FA26C8FC5 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2812FD6395C926D15DB7CBFE /* IOBluetooth.framework */; };
+		CEC52D738381EABEFFBD18A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9F40CCE91F32109F3B1CEE /* AppDelegate.swift */; };
+		F96CDC8833066AC884F56D7B /* HDB630ControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6288554D29F37F54ABAD731C /* HDB630ControlApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2812FD6395C926D15DB7CBFE /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		6288554D29F37F54ABAD731C /* HDB630ControlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDB630ControlApp.swift; sourceTree = "<group>"; };
+		9F8EDA22DD857CE2E780097B /* GAIAProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAIAProtocol.swift; sourceTree = "<group>"; };
+		C800B4A314F01AFF9A603E3F /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
+		D43BB7830237A2173F8A61D6 /* HeadphoneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneController.swift; sourceTree = "<group>"; };
+		DF9F40CCE91F32109F3B1CEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E170740EEF5E035DBF9E758D /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		FBE8260D7255BEA6E4BDEA35 /* HDB630Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDB630Control.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E0C6B64B97D4FB55BE2D280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94E0F86BD91C15FA26C8FC5 /* IOBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45BBF726DF84E720797D2ABF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2812FD6395C926D15DB7CBFE /* IOBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8ED48A4C0CEB7FB4BA8BC12E = {
+			isa = PBXGroup;
+			children = (
+				9B53E99A5FFB53FD494D2D5C /* App */,
+				A3CF1EB888B32482AA5DA61C /* Bluetooth */,
+				DCAA5049E00AAD6C2A0D560F /* UI */,
+				45BBF726DF84E720797D2ABF /* Frameworks */,
+				B165E58F849DBD9BD5861E20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B53E99A5FFB53FD494D2D5C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DF9F40CCE91F32109F3B1CEE /* AppDelegate.swift */,
+				6288554D29F37F54ABAD731C /* HDB630ControlApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A3CF1EB888B32482AA5DA61C /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				E170740EEF5E035DBF9E758D /* BluetoothManager.swift */,
+				D43BB7830237A2173F8A61D6 /* HeadphoneController.swift */,
+				9F8EDA22DD857CE2E780097B /* GAIAProtocol.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		B165E58F849DBD9BD5861E20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBE8260D7255BEA6E4BDEA35 /* HDB630Control.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCAA5049E00AAD6C2A0D560F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C800B4A314F01AFF9A603E3F /* StatusBarView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C48F639232BD310EF96AE5F /* HDB630Control */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 101D578CBD8A490F9E059BEB /* Build configuration list for PBXNativeTarget "HDB630Control" */;
+			buildPhases = (
+				96C01AD8CFB4854AE463454F /* Sources */,
+				6E0C6B64B97D4FB55BE2D280 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HDB630Control;
+			packageProductDependencies = (
+			);
+			productName = HDB630Control;
+			productReference = FBE8260D7255BEA6E4BDEA35 /* HDB630Control.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77DB4DFFA975E47D188B080D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = C648D11225C009A1F2D64EB5 /* Build configuration list for PBXProject "HDB630Control" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8ED48A4C0CEB7FB4BA8BC12E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C48F639232BD310EF96AE5F /* HDB630Control */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96C01AD8CFB4854AE463454F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC52D738381EABEFFBD18A4 /* AppDelegate.swift in Sources */,
+				802E20CB841C6B52FF041864 /* BluetoothManager.swift in Sources */,
+				F96CDC8833066AC884F56D7B /* HDB630ControlApp.swift in Sources */,
+				9095069AAAF75001F34F8BD5 /* HeadphoneController.swift in Sources */,
+				931E75494D8D2E30C472DB09 /* GAIAProtocol.swift in Sources */,
+				4C89EB2F9F389E69E5F7EA4D /* StatusBarView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4D219D43A28EC584C8C5BC23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		87489F50D9526FCE789731AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LS_UI_ELEMENT = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdb630.control;
+				PRODUCT_NAME = HDB630Control;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "HDB630Control-Bridging-Header.h";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		C05D945FBFE66B589E7E226D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E8C76C78EDA32DD2A548BEEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LS_UI_ELEMENT = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdb630.control;
+				PRODUCT_NAME = HDB630Control;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "HDB630Control-Bridging-Header.h";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		101D578CBD8A490F9E059BEB /* Build configuration list for PBXNativeTarget "HDB630Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87489F50D9526FCE789731AB /* Debug */,
+				E8C76C78EDA32DD2A548BEEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C648D11225C009A1F2D64EB5 /* Build configuration list for PBXProject "HDB630Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05D945FBFE66B589E7E226D /* Debug */,
+				4D219D43A28EC584C8C5BC23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77DB4DFFA975E47D188B080D /* Project object */;
+}

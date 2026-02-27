@@ -1,0 +1,6 @@
+apk/
+reference/
+captures/
+.DS_Store
+*.pklg
+HDB630Control.xcodeproj/xcuserdata/
