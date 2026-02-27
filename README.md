@@ -2,10 +2,6 @@
 
 Native macOS menu bar app to control Sennheiser HDB 630 headphones -- because Sennheiser only made a mobile app and forgot desktops exist.
 
-## What it does
-
-![screenshot](screenshot.png)
-
 ## How it works
 
 Communicates with the headphones over Bluetooth Classic RFCOMM using the GAIA v3 protocol (Qualcomm). Despite the Airoha chipset, HDB 630 speaks GAIA v3 -- discovered through reverse engineering the mobile app and Sennheiser's desktop client.
@@ -50,9 +46,39 @@ tools/                         -- CLI probe/test scripts used during RE
 docs/                          -- Protocol docs and RE guide
 ```
 
+## Features
+
+**Noise Control**
+- ANC modes: Adaptive, Comfort, Anti-Wind (off/max/auto)
+- Global ANC on/off
+- Transparency level (0-100)
+
+**Audio**
+- EQ presets (Neutral, Rock, Pop, Dance, Hip-Hop, Classical, Movie, Jazz) with custom detection
+- Bass boost
+- Podcast mode
+- Crossfeed (off/low/high)
+- Codec display (SBC, AAC, aptX, aptX HD, aptX Adaptive, LC3)
+
+**Call**
+- Call Transparency / sidetone (off + 4 levels)
+- Auto-Pause (pause audio when Call Transparency is active)
+- Comfort Call
+
+**Settings**
+- On-Head Detection (auto-disables Smart Pause, Auto-Answer, Auto Power Off when off)
+- Smart Pause
+- Auto-Answer Calls
+- Auto Power Off (off/15m/30m/60m)
+
+**Device Info**
+- Battery level + charging status
+- Firmware version, serial number
+- Connected devices (multipoint, view-only)
+
 ## Known Limitations
 
-- Crossfeed, sidetone, on-head detection, smart pause, auto-answer, comfort call, and auto power off don't fire push notifications -- polled every 2 seconds while popover is open
+- Crossfeed, sidetone, auto-pause, on-head detection, smart pause, auto-answer, comfort call, and auto power off don't fire push notifications -- polled every 2 seconds while popover is open
 - BTD 700 USB dongle works for audio but control still goes directly to headphones via separate BT connection
 - Multipoint is intentionally view-only, to not cut own connection
 - Custom EQ presets created in the mobile app show as "Custom" -- headphones only store raw band gains, preset names live in the phone app's local storage
