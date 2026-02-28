@@ -2,6 +2,8 @@
 
 Native macOS menu bar app to control Sennheiser HDB 630 headphones -- because Sennheiser only made a mobile app and forgot desktops exist.
 
+![screenshot](screenshot.png)
+
 ## How it works
 
 Communicates with the headphones over Bluetooth Classic RFCOMM using the GAIA v3 protocol (Qualcomm). Despite the Airoha chipset, HDB 630 speaks GAIA v3 -- discovered through reverse engineering the mobile app and Sennheiser's desktop client.
