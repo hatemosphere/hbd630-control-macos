@@ -2,7 +2,7 @@
 
 Native macOS menu bar app to control Sennheiser HDB 630 headphones -- because Sennheiser only made a mobile app and forgot desktops exist.
 
-![screenshot](screenshot.png)
+<img src="screenshot.png" width="300">
 
 ## How it works
 
